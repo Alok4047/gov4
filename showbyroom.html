@@ -1,0 +1,215 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>GOLunch | Home</title>
+<style>
+.button1 {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.subbutton {
+    background-color: brown;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+</style>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cool 404 Page Widget Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<!--
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+-->
+<!-- //for-mobile-apps -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='//fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="main">
+<img src="images/mt.png" width="35%">
+<h3><p id="date"></p></h3>
+
+		<form>
+<p id="demo"></p>
+<br>
+
+<h3><center>SELECT YOUR PLACE </center><br></h3>
+<center><select id="place" class="button1">
+<option value="Amla"> Amla</option>
+<option value="Bahada"> Bahada</option>
+<option value="Chandan"> Chandan</option>
+<option value="Dimiri"> Dimiri</option>
+<option value="Khaina"> Khaina</option>
+<option value="Social Centre"> Social Centre</option>
+
+</select></center>
+<br>
+<center><button type="button" class="subbutton" onclick="myFunction()">Know Your Time</button></center>
+<p id="dem"></p>
+<br>
+<h1><center>
+<p id="loc"></p>
+</center></h1>
+<br>
+<h1><script>
+var n=new Date();
+var x=n.getDay();
+document.getElementById("date").innerHTML=n.toDateString();
+function myFunction() {
+var y=document.getElementById("place").selectedIndex;
+if(x==0)
+{var s="ENJOY YOUR DAY :) YOU CAN GO ANYTIME FOR LUNCH BETWEEN 12 PM TO 2:30 PM";
+document.getElementById("loc").innerHTML=s;
+}
+if(x==1 && y==0)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR AMLA IS= 01:30 PM";
+}
+else if(x==1 && y==1)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR BAHADA IS= 12:30 PM";
+}
+else if(x==1 && y==2)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR CHANDAN IS= 12:45 PM";
+}
+else if(x==1 && y==3)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR DIMIRI IS= 01:00 PM";
+}
+else if(x==1 && y==4)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR KHAINA IS= 01:15 PM";
+}
+else if(x==1 && y==5)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR Social Center IS= 01:15 PM";
+}
+
+
+if(x==2 && y==0)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR AMLA IS= 01:15 PM";
+}
+else if(x==2 && y==1)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR BAHADA IS= 01:30 PM";
+}
+else if(x==2 && y==2)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR CHANDAN IS= 12:30 PM";
+}
+else if(x==2 && y==3)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR DIMIRI IS= 12:45 PM";
+}
+else if(x==2 && y==4)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR KHAINA IS= 01:00 PM";
+}
+else if(x==2 && y==5)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR Social Center IS= 01:00 PM";
+}
+
+if(x==3 && y==0)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR AMLA IS= 01:00 PM";
+}
+else if(x==3 && y==1)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR BAHADA IS= 01:15 PM";
+}
+else if(x==3 && y==2)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR CHANDAN IS= 01:30 PM";
+}
+else if(x==3 && y==3)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR DIMIRI IS= 12:30 PM";
+}
+else if(x==3 && y==4)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR KHAINA IS= 12:45 PM";
+}
+else if(x==3 && y==5)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR Social Center IS= 12:45 PM";
+}
+
+if(x==4 && y==0)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR AMLA IS= 12:45 PM";
+}
+else if(x==4 && y==1)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR BAHADA IS= 01:00 PM";
+}
+else if(x==4 && y==2)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR CHANDAN IS= 01:15 PM";
+}
+else if(x==4 && y==3)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR DIMIRI IS= 01:30 PM";
+}
+else if(x==4 && y==4)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR KHAINA IS= 12:30 PM";
+}
+else if(x==4 && y==5)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR Social Center IS= 12:30 PM";
+}
+
+if(x==5 && y==0)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR AMLA IS= 12:30 PM";
+}
+else if(x==5 && y==1)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR BAHADA IS= 12:45 PM";
+}
+else if(x==5 && y==2)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR CHANDAN IS= 01:00 PM";
+}
+else if(x==5 && y==3)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR DIMIRI IS= 01:15 PM";
+}
+else if(x==5 && y==4)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR KHAINA IS= 01:30 PM";
+}
+else if(x==5 && y==5)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR Social Center IS= 01:30 PM";
+}
+
+if(x==6 && y==0)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR AMLA IS= 01:30 PM";
+}
+else if(x==6 && y==1)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR BAHADA IS= 12:30 PM";
+}
+else if(x==6 && y==2)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR CHANDAN IS= 12:45 PM";
+}
+else if(x==6 && y==3)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR DIMIRI IS= 01:00 PM";
+}
+else if(x==6 && y==4)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR KHAINA IS= 01:15 PM";
+}
+else if(x==6 && y==5)
+{document.getElementById("loc").innerHTML="TODAY'S LUNCH TIME FOR Social Center IS= 01:15 PM";
+}
+
+}
+</script>
+</h1>
+
+</form>
+		
+				<div class="copyright">
+			<p>© MINDTREE | Design by <a href="#">TEST PLAYER</a></p>
+		</div>
+	</div>
+</body>
+</html>
